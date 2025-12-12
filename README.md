@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Senior Backend Engineer
+
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS.
+
+## Features
+
+- 🎨 Modern dark theme design
+- 📱 Fully responsive layout
+- ⚡ Fast performance with Next.js
+- 🎯 Multiple sections: About, Experience, Skills, Projects, Contact
+- 🔗 Social media integration
+- 📧 Contact form with email copy functionality
+
+## Tech Stack
+
+- **Framework**: Next.js 16
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Icons**: Material Symbols, Lucide React
+- **Fonts**: Inter, JetBrains Mono
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 20.9.0 or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Deploy on Render
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Go to [Render Dashboard](https://dashboard.render.com)
+3. Click "New +" → "Web Service"
+4. Connect your repository
+5. Configure:
+   - **Name**: portfolio (or your preferred name)
+   - **Environment**: Node
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+   - **Node Version**: 20.x (or higher)
+6. Click "Create Web Service"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Render will automatically:
+- Install dependencies
+- Build the Next.js application
+- Start the production server
 
-## Deploy on Vercel
+### Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+No environment variables are required for basic deployment. If you need to add any later, you can configure them in the Render dashboard under "Environment" tab.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── contact/          # Contact page
+│   ├── experience/       # Experience page
+│   ├── projects/         # Projects page
+│   ├── skills/           # Skills page
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
+├── components/
+│   ├── layout/           # Layout components (Navbar, Footer)
+│   ├── sections/         # Page sections (Hero, Experience, etc.)
+│   └── ui/               # Reusable UI components
+├── public/
+│   └── images/           # Static images
+├── next.config.ts        # Next.js configuration
+├── tailwind.config.ts    # Tailwind CSS configuration
+└── package.json          # Dependencies and scripts
+```
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## License
+
+Private project - All rights reserved
