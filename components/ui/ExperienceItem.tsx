@@ -1,5 +1,3 @@
-import { ArrowOutward } from "lucide-react";
-
 export interface ExperienceItemProps {
   title: string;
   company: string;
