@@ -47,6 +47,16 @@ export default function Navbar() {
             </a>
             <a 
               className={`text-sm font-medium transition-colors ${
+                pathname === "/skills" 
+                  ? "text-white" 
+                  : "text-zinc-400 hover:text-white"
+              }`}
+              href="/skills"
+            >
+              Skills
+            </a>
+            <a 
+              className={`text-sm font-medium transition-colors ${
                 pathname === "/projects" 
                   ? "text-white" 
                   : "text-zinc-400 hover:text-white"
@@ -109,6 +119,17 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Experience
+            </a>
+            <a 
+              className={`text-sm font-medium transition-colors ${
+                pathname === "/skills" 
+                  ? "text-white" 
+                  : "text-zinc-400 hover:text-white"
+              }`}
+              href="/skills"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Skills
             </a>
             <a 
               className={`text-sm font-medium transition-colors ${

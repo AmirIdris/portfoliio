@@ -55,28 +55,28 @@ export default function Experience() {
       <div className="max-w-4xl mx-auto flex flex-col gap-12 sm:gap-16">
         {/* Page Heading */}
         <div className="space-y-4">
-          <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-white">
             Work Experience
           </h1>
-          <p className="text-zinc-500 dark:text-zinc-400 text-lg max-w-2xl leading-relaxed">
+          <p className="text-zinc-400 text-lg max-w-2xl leading-relaxed">
             7+ years architecting scalable distributed systems and high-throughput APIs. Specialized in Go, Node.js, and Cloud Infrastructure.
           </p>
         </div>
 
         {/* Timeline Container */}
-        <div className="relative pl-0 sm:pl-8 border-l-0 sm:border-l border-zinc-200 dark:border-zinc-800 space-y-12">
+        <div className="relative pl-0 sm:pl-8 border-l-0 sm:border-l border-zinc-800 space-y-12">
           {experiences.map((experience, index) => (
             <ExperienceItem key={index} {...experience} />
           ))}
         </div>
 
         {/* Footer Call to Action */}
-        <div className="flex flex-col items-center justify-center pt-12 pb-8 border-t border-zinc-200 dark:border-white/5">
-          <p className="text-zinc-500 dark:text-zinc-400 mb-6 text-center">
+        <div className="flex flex-col items-center justify-center pt-12 pb-8 border-t border-white/5">
+          <p className="text-zinc-400 mb-6 text-center">
             Interested in working together?
           </p>
           <a
-            className="group flex items-center gap-2 text-zinc-900 dark:text-white font-bold text-lg hover:text-primary transition-colors"
+            className="group flex items-center gap-2 text-white font-bold text-lg hover:text-primary transition-colors"
             href="mailto:hello@johndoe.com"
           >
             <span className="material-symbols-outlined text-primary">mail</span>
