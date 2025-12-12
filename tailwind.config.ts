@@ -12,7 +12,11 @@ const config: Config = {
       colors: {
         primary: "#0d74f2",
         "background-light": "#f5f7f8",
-        "background-dark": "#101822",
+        "background-dark": "#09090b",
+        "card-dark": "#18181b",
+        "border-dark": "#27272a",
+        "text-secondary": "#a1a1aa",
+        "accent-blue": "#60a5fa",
         "surface-dark": "rgba(24, 24, 27, 0.5)",
         background: "#09090b",
         surface: "#18181b",

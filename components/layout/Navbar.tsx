@@ -65,6 +65,16 @@ export default function Navbar() {
             >
               Projects
             </a>
+            <a 
+              className={`text-sm font-medium transition-colors ${
+                pathname === "/contact" 
+                  ? "text-white" 
+                  : "text-zinc-400 hover:text-white"
+              }`}
+              href="/contact"
+            >
+              Contact
+            </a>
           </nav>
 
           {/* Mobile Menu Button & Actions */}
@@ -141,6 +151,17 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
+            </a>
+            <a 
+              className={`text-sm font-medium transition-colors ${
+                pathname === "/contact" 
+                  ? "text-white" 
+                  : "text-zinc-400 hover:text-white"
+              }`}
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </a>
           </nav>
         </div>
