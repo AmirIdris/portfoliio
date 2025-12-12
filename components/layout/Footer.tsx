@@ -1,4 +1,3 @@
-import { Github, Linkedin, Mail, AtSign } from "lucide-react";
 
 export default function Footer() {
   return (

@@ -76,7 +76,7 @@ export default function Contact() {
 
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-white">
-              Let's build something <br className="hidden md:block" />{" "}
+              Let&apos;s build something <br className="hidden md:block" />{" "}
               <span className="text-zinc-400">scalable together.</span>
             </h1>
             <p className="text-lg text-zinc-400 max-w-xl font-normal leading-relaxed">

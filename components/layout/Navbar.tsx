@@ -3,6 +3,7 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="flex h-20 items-center justify-between">
           {/* Logo / Name */}
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="flex items-center justify-center size-8 rounded-lg bg-primary/20 text-primary">
               <span className="material-symbols-outlined text-[20px]">terminal</span>
             </div>
@@ -21,11 +22,11 @@ export default function Navbar() {
             <span className="hidden sm:inline-block text-zinc-500 font-mono text-xs px-2 py-0.5 rounded border border-white/5 bg-white/5">
               v2.0.4
             </span>
-          </a>
+            </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <a 
+            <Link 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/" 
                   ? "text-white" 
@@ -34,8 +35,8 @@ export default function Navbar() {
               href="/"
             >
               About
-            </a>
-            <a 
+            </Link>
+            <Link 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/experience" 
                   ? "text-white" 
@@ -44,8 +45,8 @@ export default function Navbar() {
               href="/experience"
             >
               Experience
-            </a>
-            <a 
+            </Link>
+            <Link 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/skills" 
                   ? "text-white" 
@@ -54,7 +55,7 @@ export default function Navbar() {
               href="/skills"
             >
               Skills
-            </a>
+            </Link>
             <a 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/projects" 
@@ -79,20 +80,20 @@ export default function Navbar() {
 
           {/* Mobile Menu Button & Actions */}
           <div className="flex items-center gap-4">
-            <a 
+            <Link 
               className="text-zinc-400 hover:text-white transition-colors" 
               href="#"
               aria-label="Resume"
             >
               <span className="material-symbols-outlined">description</span>
-            </a>
-            <a 
+            </Link>
+            <Link 
               className="text-zinc-400 hover:text-white transition-colors" 
               href="mailto:alex@example.com"
               aria-label="Email"
             >
               <span className="material-symbols-outlined">mail</span>
-            </a>
+            </Link>
             <button 
               className="md:hidden text-zinc-400 hover:text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -108,7 +109,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden border-t border-zinc-800 bg-background-dark/95 backdrop-blur-md">
           <nav className="px-6 py-4 flex flex-col gap-4">
-            <a 
+            <Link 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/" 
                   ? "text-white" 
@@ -118,8 +119,8 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
-            <a 
+            </Link>
+            <Link 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/experience" 
                   ? "text-white" 
@@ -129,8 +130,8 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Experience
-            </a>
-            <a 
+                    </Link>
+            <Link 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/skills" 
                   ? "text-white" 
@@ -140,7 +141,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Skills
-            </a>
+            </Link>
             <a 
               className={`text-sm font-medium transition-colors ${
                 pathname === "/projects" 

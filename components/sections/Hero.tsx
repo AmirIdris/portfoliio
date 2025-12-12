@@ -38,7 +38,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                I'm <span className="text-white font-medium">Alex Devries</span>, a Senior Backend Engineer. I architect distributed infrastructure, build robust APIs, and optimize database performance for high-growth tech companies.
+                I&apos;m <span className="text-white font-medium">Alex Devries</span>, a Senior Backend Engineer. I architect distributed infrastructure, build robust APIs, and optimize database performance for high-growth tech companies.
               </p>
             </div>
 

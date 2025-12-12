@@ -1,5 +1,3 @@
-import { Code, Article, OpenInNew, Lock } from "lucide-react";
-
 export interface ProjectCardProps {
   icon: string;
   title: string;
